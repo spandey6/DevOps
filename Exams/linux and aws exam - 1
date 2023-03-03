@@ -1,0 +1,148 @@
+What is Linux?
+
+Linux is a free and open source operating system like windows and MacOS. There are different types of flavors of it like CentOS, Redhat and many more. 
+
+
+ Which are the Linux Directory Commands?
+ cd, pwd, mkdir, ls, and rm are linux directory commands
+
+ Which are the different modes of vi editor?
+ insert and command mode are the different modes of vi editor
+
+ Why is the tar/zip command used?
+ tar/zip commands are used to compress and unzip the directories
+
+ How to copy a file in Linux?
+ you can copy a file by using cp command like cp filename path where you want to copy
+
+ How to rename a file in Linux?
+ rename oldname newname
+
+ How to write the output of a command to a file?
+ command >> filename
+
+ Name 3 or more Cloud providers?
+ 1. AWS
+ 2. Microsoft Azure
+ 3. Google cloud
+
+   Explain the following commands:
+   pwd Command
+   shows the current working directory
+
+   mkdir
+   Make directory
+
+   rmdir 
+   remove directory
+
+   ls 
+   List all files
+
+   cd 
+   change directory
+
+   touch 
+   create a file
+
+   rm
+   remove a file
+
+   rm -rf
+   remove all the files inside a direcotory 
+
+   mv
+   move directory from one path to different or even rename the name of the directory/file
+
+   cp
+   copy a file
+
+   tail
+   it displays last 10 lines of a file
+
+   more
+   it displays all the content from a large file
+
+   useradd
+   add a user in the system
+
+   passwd
+   set and reset password of the users
+
+   chgrp
+   change the group for a user
+
+   sudo
+   super user un the system or super doers
+
+   grep
+   used for filter
+
+   sed
+   stream editor which is used to edit files using regular expressions
+
+   find
+   search files/directoriues in the system
+
+   uniq
+   used for sorting list where all the words only occur once
+
+   ssh
+   remote connection through ssh protocol
+   
+   explain difference between following commands:
+   grep vs sed
+   grep is used for filter purpose like getting certail output from a files where as sed is used for finding and making changes of it
+
+   cp vs mv
+   cp is used to change name of the file where as mv is used for changing name and also moving the file to different directory
+
+   tail vs tail -f
+   tail will show the content of last 10 lines where as tail -f will append output as the files goes
+
+   rm -rf vs rmdir
+   rm -rf will remove direcories with files inside them where as rmdir will only delete empty directory
+
+   head vs tail
+   head will display first 10 lines where as tail will display last 10 lines
+  
+What is the difference between SSH and RDP
+ssh is remote into systen ssh protocol and you only has asscess to command line shell where as RDP is remote desktop and will have access to GUI version of the systems too which means you have fill access to a OS
+
+Which AWS service would be used to create an automated process to extract data, transform/clean the data and load it to the target system?
+AWS glue
+
+Which AWS service would be used to visualize data present in an RDS database?
+Amazon QuickSight
+
+
+Explain the following in AWS:
+Security Groups
+it acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic
+
+Private Keys
+private keys are used to prove your credentials when connecting to aws intences
+
+Glue
+aws glue is a cloud service that prepares data for analusis through automated extract transform and load processes.
+
+Athena
+Athena helps to analyze unstructured, semi-structured, and structured data stored in S3 bucked
+
+AWS MQ
+It is a managed message broker service that makes it easy to migrate in the cloud. it allows software applications and components to communicate to each other
+
+Quicksight
+It is a tool used to build visualization, perform analysis and get business insights from the data
+
+Kinesis
+It makes easy to securely streams video streaming services from connected to aws
+
+Opensearch
+IT is a aws-managed service that lets you run and scale opensearch clusters without managing and monitoring them
+
+Lakeformation
+it is a centtralized and secured repository that stored all data
+
+step function
+It is a virtual workfolow service that helps developers to build applications and automate process
