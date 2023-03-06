@@ -1,0 +1,86 @@
+#1. get the username and password as user input and validate whether its correct or not.
+
+read -p "Enter username: " username
+read -p "Enter Password: " password
+
+if [ $username = $username ]
+then
+        echo "Username entered is correct"
+else
+        echo "Username incorrect please re-enter"
+fi
+
+if [ $password = $password ]
+then
+        echo "Password entered is correct"
+else
+        echo "Password incorrect please re-enter your password"
+fi
+
+
+#2.Ask user to input a number and validate whether its equal to 15 or not
+read -p "Enter a number: " number
+echo "----------------------------------------------------"
+
+if [ $number == 15 ]
+then
+        echo "$number is equal to 15"
+else
+        echo "$number is not equal to 15"
+fi
+
+#3. Ask user to input a number and validate whether its greater than to 15 or not
+
+read -p "Enter a number: " number
+echo "----------------------------------------------------"
+
+if [ $number -gt 15 ]
+then
+        echo "$number is greater than 15"
+else
+        echo "$number is less than 15"
+fi
+
+#4. Ask user to input a string and validate whether contains string character "ab" or not.
+read -p "Enter a string: " string1
+echo "-----------------------------------------------------"
+
+if [[ $string1 == *"ab"* ]]
+then
+        echo "$string1 contains string "ab"
+else
+        echo "$string1 does not contains "ab"
+fi
+
+#6. Ask user to input a 3 letter string and validate whether it contains character "a" at its first position or not.
+read -p "Enter a 3 letter string: " string
+echo "-----------------------------------------------------"
+
+if [[ ${string:0:1} == "a" ]]
+then
+        echo "$string contains "a" at the first position"
+else
+        echo "$string doesn't contails "a" at the first position"
+fi
+
+#7. Ask user to input a 3 letter string and validate whether it contains character "a" or "b" at its first position.
+read -p "Enter a 3 letter string: " string
+echo "-----------------------------------------------------"
+
+if [[ ${string:0:1} == "a" || ${string:0:1} == "b" ]]
+then
+        echo "$string contains "a" or "b" at its first position"
+else
+        echo "$string doesn't validates the condition"
+fi
+
+#8. Ask user to input a number and validate whether it satisfies any of the conditions as the number is less than 15 and equal to 8
+read -p "Enter a number: " num2
+echo "-----------------------------------------------------"
+
+if [[ $num2 -lt 15 && $num2 = 8 ]]
+then
+        echo "$num2 is less than 15 and equal to 8"
+else
+        echo "$num2 doesn't qualifies the condition"
+fi
