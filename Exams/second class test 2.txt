@@ -1,0 +1,21 @@
+- State the difference between Dev Vs QA vs UAT vs Production branch
+- Explain the reason for creation of different Envronment for sample application.
+- Explain difference between UAT and Staging Environments.
+- Install and run jenkins
+- Create a public Repository on GitHub
+- Push a file index.html to the newly created Repo on Github.
+- Intergreate GIthub with jenkins,
+
+create a freestyle job performing the following actions:
+1. Downloads the file pushed to github repo.
+2. print the contents of the file in console output(logs) of the jenkins jobs
+3. Parameterize the job with 3 string parameters 
+		1. Version
+		2. Filename
+		3. Enironment
+    and print the values of these parameters in the job logs.
+4. Automatically delete Jobs that more then 1 day old.
+5. Print timespan in jenkins output.
+6. Run the job Automatically every hr.
+7. Execute a windows/shell command printing the contents of the current working directory in the job.
+
