@@ -1,0 +1,93 @@
+Devops Test 07-Mar-2023
+
+
+1. What is Git and why is it used?
+Git is open source version control software that is used for continous integration.
+
+2. What benefits come with using GIT?
+We develop softwares in a group and changes are made or features are added in day to day basis where there are multiple people work on 1 applications and git helps them to create differnet branches so that everyone has their own version of software. They are easy to merge.
+
+3. What does the command git config do?
+git config command is a tool that lets us to get and set configuration variables that controls how git operates.
+
+4. What is a merge conflict?
+when git cannot automatically resolve code differences between two commits.
+
+5. What is continuous integration?
+It is the process of automatically integrating the code changes from multiple sources/contribution into a single software project
+ 
+6. What does git status command do?
+git status command show the state of working directory and the staging area. It will show what files are tracked and not by git.
+
+7. Commands used to commit code to git repo?
+git commit -m "commet"
+
+8. How to revert a bad commit which is already pushed?
+git revert old commit hash new commit hash
+
+9. What are the features of Jenkins?
+below are the features of Jenkins
+	easy installation
+	easy configuration
+	plugins are available easily
+	easy distribution
+	free and open source
+	easy integration
+
+10. Differences between git revert and git reset
+git revert will allow us to go to the specic hash that we want to
+git reset will undo any local changes done
+
+11. How to install Jenkins?
+downlown the .war file from jenkins site then 
+run java -jar jenkins.war 
+this works in every operating system 
+
+12. What does git pull origin master do?
+It pulls the all the files from github repo to the local machine
+
+ 
+13. Difference between git fetch and git pull.
+git fetch downloads all the commits, files, and refs from github/remote repo to the local machine
+git pull fetch and also download contents from the remote repo then match them to the local repo
+
+14. How can you start Jenkins manually?
+open terminal
+then go to the path that has war file
+then run java -jar jenkins.war
+open browser then got to localhost:8080
+
+15. How do you resolve conflicts in Git?
+Best way to resolve the conflits in git is to make necessary changes by editing the file and then git add the file and create a new commit.
+
+16. What are the components that you can integrate Jenkins with?
+Jenkins can be integrated with version control software git
+
+17. What do you understand about the Staging area in Git?
+staging are in git are the untracked files which have some changes made and then added them to repo before commiting them.
+
+18. Difference between “pull request” and “branch”?
+pull request lets other know about the changes you made ro a branc in remote on github.
+branches are pointer to a snapshot of your changes in github
+
+19. Is Git and GitHub the same thing?
+git is installed and maintained on your local machine
+github is git repo hosting services which is in the cloud
+
+20. What are the Parameters in Jenkins?
+parameters in jenkins lets us to use git name, credentials, hostnames, and ports.
+
+21. What are the ways by which a build can be scheduled in Jenkins?
+build can be triggred by source code commits from github
+
+22. How to configure and use a third-party tool in Jenkins?
+have to add plugins to use any third-party tools in jenkins
+
+23. From one server to another, how do you copy or move your Jenkins Jobs?
+install correct version of jenkins on new machines
+migrate the startup java argument on new machine this should match from old machine
+stop the instance on the old machine
+
+24. What are the software prerequisites that must be met before Jenkins is installed?
+java is the only software required before installing jenkins
+
