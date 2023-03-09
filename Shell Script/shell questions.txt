@@ -1,0 +1,49 @@
+Enter two numbers:
+5.6
+3.4
+Enter Choice: 
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+3
+5.6 * 3.4 = 19.0
+
+question 2
+
+0
+1 0
+2 1 0
+3 2 1 0
+4 3 2 1 0
+5 4 3 2 1 0
+6 5 4 3 2 1 0
+7 6 5 4 3 2 1 0
+8 7 6 5 4 3 2 1 0
+9 8 7 6 5 4 3 2 1 0
+
+question 3
+
+Get a number from user and identify whether it is odd or even
+
+question 4
+
+print multiplication table for any number based on user requirement.
+
+question 5
+
+ create a shell script program to swap to numbers and then print both variables after swapping on the console screen.
+
+
+a=0
+while [ "$a" -lt 10 ]    # this is loop1
+do
+   b="$a"
+   while [ "$b" -ge 0 ]  # this is loop2
+   do
+      echo -n "$b "
+      b=`expr $b - 1`
+   done
+   echo
+   a=`expr $a + 1`
+done
