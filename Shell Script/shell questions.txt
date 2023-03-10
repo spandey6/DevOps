@@ -47,3 +47,40 @@ do
    echo
    a=`expr $a + 1`
 done
+
+
+
+#!/bin/sh
+
+# Example script to show the difference between sh and bash
+
+# Define two variables
+str1="hello"
+str2="world"
+
+# Use the test command to compare the strings
+if test "$str1" = "$str2"; then
+  echo "The strings are equal."
+else
+  echo "The strings are not equal."
+fi
+
+
+
+
+------------------------------------------
+
+#!/bin/bash
+
+# Example script to show the difference between sh and bash
+
+# Define two variables
+str1="hello"
+str2="world"
+
+# Use the built-in [[ ]] operator to compare the strings
+if [[ "$str1" == "$str2" ]]; then
+  echo "The strings are equal."
+else
+  echo "The strings are not equal."
+fi
