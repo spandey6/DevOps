@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Enter a number: "
+read number
+
+if [ $(( number%6 )) -eq 0 ]
+then
+	echo "$number is a multiple of 6"
+else
+	echo "$number is not a multiple of 6"
+fi

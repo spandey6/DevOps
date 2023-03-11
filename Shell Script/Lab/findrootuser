@@ -1,0 +1,6 @@
+if [ $EUID -ne 0 ]
+then 
+	echo "$USER is not a root user"
+else 
+	echo "$USER is a root user"
+fi

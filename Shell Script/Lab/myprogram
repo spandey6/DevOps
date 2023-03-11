@@ -1,0 +1,4 @@
+read -p "Enter the name you want to search: " name
+read -p "Enter the name that you want to copy to the file: " secondname
+cat searchnames | grep $name
+cat searchnames | grep $secondname >> names.txt

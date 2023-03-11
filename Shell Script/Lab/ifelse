@@ -1,0 +1,28 @@
+read -p "Enter string1: " string1
+read -p "Enter string2: " string2
+read -p "Enter num1: " num1
+read -p "Enter num2: " num2
+
+echo "-----------------------------------------------------------------------"
+if [ $string1 = $string2 ]
+then
+	echo "Letter $string1  is equal to letter $string2"
+else
+	echo "Letter $string1 is not equal to letter $string2" 
+fi
+
+echo "-----------------------------------------------------------------------"
+if [ $num1 -eq $num2 ]
+then
+	echo "Number $num1 is equal to number $num2"
+else
+	echo "Number $num1 is not equal to number $num2"
+fi
+
+echo "-----------------------------------------------------------------------"
+if [ $num1 -gt $num2 ]
+then
+	echo "Number $num1 is greater than number $num2"
+else
+	echo "Number $num1 is less than number $num2"
+fi

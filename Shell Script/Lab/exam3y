@@ -1,0 +1,23 @@
+read -p "Enter a number: " number
+echo "----------------------------------------------------"
+
+if [[ $number -gt 15 && $number != 16 ]]
+then
+        echo "$number is greater than 15 and not equal to 16"
+else
+        echo "$number doesn't qualifies the condition"
+fi
+
+if [ $number -gt 15 ]
+then
+        echo "$number is greater than 15"
+else
+        echo "$number is less than 15"
+fi
+
+#if [ $number -lt 15 ]
+#then
+#        echo "True"
+#else
+#        echo "False"
+#fi

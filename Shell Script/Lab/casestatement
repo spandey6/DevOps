@@ -1,0 +1,13 @@
+FRUIT="banana"
+
+case "$FRUIT" in
+
+"apple") echo "Apple pie is quite tasty."
+;;
+
+"banana") echo "I like Banana bread"
+;;
+
+"kiwi") echo "New Zealand is famous for kiwi"
+;;
+esac

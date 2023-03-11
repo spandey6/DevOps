@@ -1,0 +1,14 @@
+read -p "Enter the first length of the triangle: " side1
+read -p "Enter the second length of the triangle: " side2
+read -p "Enter the third length of the triangle: " side3
+echo "-----------------------------------------------------"
+
+if [ $side1 -eq $side2 ] & [ $side2 -eq $side3 ]
+then
+	echo "Triangle is a equilateral triangle"
+elif [ $side1 -ne $side2 ] && [ $side1 -ne $side3 ] && [ $side2 -ne $side3 ]
+then
+	echo "Triangle is a Scalene triangle"
+else
+	echo "Triangle is Isosceles triangle"
+fi

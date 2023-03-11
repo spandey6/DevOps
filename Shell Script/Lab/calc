@@ -1,0 +1,20 @@
+read -p "Enter the first number: " num1
+read -p "Enter the second number: " num2
+read -p "Enter your choice from 1 through 4: " choice
+
+case $choice in
+
+1) echo "Addition $num1 + $num2 = $((num1+num2))"
+;;
+
+2) echo "Subtraction $num1 - $num2 = $((num1-num2))"
+;;
+
+3) echo "Multiplication $num1 * $num2 = $((num1*num2))"
+;;
+
+4) echo "Division $num1 / $num2 = $((num1/num2))"
+;;
+
+esac
+

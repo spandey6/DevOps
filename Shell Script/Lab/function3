@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function file_exists {
+	if [-f"$1"]; then # -f checks if the files exists in the current directory
+		echo "The file $1 exists."
+	else
+		echo "The file $1 does not exist."
+	fi
+}
+file_exists "example.txt"

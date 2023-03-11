@@ -1,0 +1,10 @@
+#!/bin/bash
+ROOT=$(cat /etc/group | grep sudo)
+iam=$(whoami)
+
+if [ $ROOT = $iam ]
+then
+  echo "You are a root user."
+else
+  echo "You are not a root user"
+fi

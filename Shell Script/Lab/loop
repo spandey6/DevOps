@@ -1,0 +1,8 @@
+for a in $(ls)
+do
+# this is just a comment
+# explaination of your code 
+
+	echo "Line count of $a is $(cat $a | wc -l)"
+	echo " $file "
+done

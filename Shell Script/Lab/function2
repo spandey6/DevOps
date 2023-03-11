@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function add {
+	result=$(($1+$2))
+	echo $result
+} 
+
+sum=$(add 3 5)
+
+echo "The sum is: $sum"
