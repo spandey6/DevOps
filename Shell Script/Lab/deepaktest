@@ -1,8 +1,9 @@
 #!/bin/bash
-ROOT=$(cat /etc/group | grep sudo)
+#ROOT=$(cat /etc/group | grep sudo)
 iam=$(whoami)
 
-if [ $ROOT = $iam ]
+#if [ $ROOT = $iam ]
+if groups "$iam" | grep &>/dev/null '\broot\b'
 then
   echo "You are a root user."
 else
