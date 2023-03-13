@@ -2,12 +2,24 @@ Name the different types of pipelines in Jenkins?
 What is Jenkinsfile?
 What is the process to integrate Git with Jenkins?
 below are the steps of interegrating git with Jenkins
-  1. 
+  1. login to your github account > setting and then created a provate key
+  3. copy the key which will be needed in step 4
+  2. run jenkins war file on terminal then open it on the browser
+  3. go to manager jenkins > configure system then go to GitHub section
+  4. change the kind to secret text and paste the key on the password
+  5. give a name on the ID section and click add.
+  6. click test connection which will confirm the connection 
+  
 Write a Jenkins file with 5 stages clone, scan, build, upload artifact, deploy and print the stage name in the logs, hint hardcode the stage name.
+
 Write a Jenkinsfile to take 3 parameters as input (1 string parameter, 1 boolean parameter, 1 choice parameter) and print them
 write a Jenkinsfile to download a file from git and print it's content in the console
 output(logs)
 Describe process to integrate maven with jenkins
+1. go to Jenkins Dashboard > Manager Jenkins > Manage Plugins > Available > Maven Integration > Install
+2. Go to Manage Jenkins > Global tool Configuration > Maven > add Maven_home variable value which is the path on your system.
+3. go to jenkins dashboard and new item should have option for maven pipeline option.
+
 writer a Jenkinsfile to downlad java code from git repo and compile it using maven
 write a Jenkinsfile to download a file from git and transfer the same to a remote server(e g ec2-instance) hint: use pubhish over ssh plugin?
 write a jenkinsfile that triggers itself every minute.?
