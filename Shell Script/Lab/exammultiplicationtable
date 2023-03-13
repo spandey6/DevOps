@@ -1,0 +1,7 @@
+read -p "Enter a number you want to get a multiplication table for: " num
+echo "-------------------------------------------------------------------------"
+
+for i in {1..10}
+do
+	echo "$num * $i = $((i*num))"
+done
