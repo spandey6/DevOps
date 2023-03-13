@@ -1,5 +1,11 @@
 Name the different types of pipelines in Jenkins?
+there are 2 types of pipelines in jenkins
+1. Declarative pipeline
+2. Sctipted pipeline
+
 What is Jenkinsfile?
+It is a txt file that contais all the jekins pipeline and is checked into source control
+
 What is the process to integrate Git with Jenkins?
 below are the steps of interegrating git with Jenkins
   1. login to your github account > setting and then created a provate key
