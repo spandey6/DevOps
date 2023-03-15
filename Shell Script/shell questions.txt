@@ -1,7 +1,7 @@
 Enter two numbers:
 5.6
 3.4
-Enter Choice: 
+Enter Choice:
 1. Addition
 2. Subtraction
 3. Multiplication
@@ -83,4 +83,14 @@ if [[ "$str1" == "$str2" ]]; then
   echo "The strings are equal."
 else
   echo "The strings are not equal."
+fi
+
+
+#find out if you have sudo privilages
+#!/bin/bash
+
+if sudo -v &> /dev/null;then
+echo “You have sudo privileges.”
+else
+echo “You do not have sudo privledges. ”
 fi
