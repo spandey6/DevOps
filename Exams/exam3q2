@@ -1,0 +1,59 @@
+read -p "Enter a number: " number
+echo "----------------------------------------------------"
+
+if [[ $number -gt 15 && $number != 16 ]]
+then
+	echo "$number is greater than 15 and not equal to 16"
+else
+	echo "$number doesn't qualifies the condition"
+fi
+
+if [ $number -gt 15 ]
+then
+	echo "True"
+else
+	echo "False"
+fi
+
+if [ $number -lt 15 ]
+then
+	echo "True"
+else
+	echo "False"
+fi
+
+read -p "Enter a string: " string1
+echo "-----------------------------------------------------"
+
+if [ $string1 = *ab* ]
+then
+	echo "True"
+else
+	echo "False"
+fi
+
+echo "-----------------------------------------------------"
+
+read -p "Enter a 3 letter string: " 3letterstring
+echo "-----------------------------------------------------"
+
+if [[ ${3letterstring:0} == "a" || ${3letterstring:0} == "b" ]]
+then
+	echo "$3letterstring contains "a" or "b" at its first position
+else
+	echo "doesn't validates the condition
+fi
+
+echo "-----------------------------------------------------"
+
+
+read -p "Enter a number: " num2
+echo "-----------------------------------------------------"
+
+if [[ $num2 -lt 15 && $num2 = 8 ]]
+then
+	echo "$num2 is less than 15 and equal to 8"
+else
+	echo "$num2 doesn't qualifies the condition"
+fi
+

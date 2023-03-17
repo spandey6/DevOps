@@ -1,0 +1,9 @@
+read -p "Enter a number: " number
+echo "----------------------------------------------------"
+
+if [ $number == 15 ]
+then
+	echo "$number is equal to 15"
+else
+	echo "$number is not equal to 15"
+fi 

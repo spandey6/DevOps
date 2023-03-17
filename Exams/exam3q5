@@ -1,0 +1,18 @@
+read -p "Enter a 3 letter string: " string
+echo "-----------------------------------------------------"
+
+if [[ ${string:0:1} == "a" || ${string:0:1} == "b" ]]
+then
+        echo "$string contains "a" or "b" at its first position"
+else
+        echo "$string doesn't validates the condition"
+fi
+
+echo "-----------------------------------------------------"
+
+if [[ ${string:0:1} == "a" ]]
+then 
+	echo "$string contains "a" at the first position"
+else
+	echo "$string doesn't contails "a" at the first position"
+fi

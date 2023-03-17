@@ -1,0 +1,17 @@
+read -p "Enter username: " username
+read -p "Enter Password: " password
+echo "----------------------------------------------------"
+
+if [ $username = $username ]
+then
+	echo "Username entered is correct"
+else
+	echo "Username incorrect please re-enter"
+fi
+
+if [ $password = $password ] 
+then
+	echo "Password entered is correct"
+else 
+	echo "Password incorrect please re-enter your password"
+fi

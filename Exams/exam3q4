@@ -1,0 +1,9 @@
+read -p "Enter a string: " string1
+echo "-----------------------------------------------------"
+
+if [[ $string1 == *"ab"* ]]
+then
+        echo "$string1 contains string "ab"
+else
+        echo "$string1 does not contains "ab"
+fi

@@ -1,0 +1,9 @@
+read -p "Enter a number: " num2
+echo "-----------------------------------------------------"
+
+if [[ $num2 -lt 15 && $num2 = 8 ]]
+then
+        echo "$num2 is less than 15 and equal to 8"
+else
+        echo "$num2 doesn't qualifies the condition"
+fi
