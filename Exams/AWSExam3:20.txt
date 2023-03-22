@@ -1,0 +1,133 @@
+                                              Devops Test 21-MAR-2023
+Which Amazon EC2 billing option gives you low cost, maximum flexibility, no upfront costs or commitment, and you only pay for what you use?
+On-Demand Instances.
+Dedicated Host.
+Reserved Instances.
+Spot Instances
+
+Answer: On-demand instances
+
+2.  Amazon EC2 instances run between 10 am and 6 pm Monday-Thursday in a development environment. Production instances run 24/7. Which pricing models should be used? (Select TWO)
+Use Spot instances for the development environment.
+Use scheduled reserved instances for the development environment.
+Use Reserved instances for the production environment.
+Use Reserved instances for the development environment.
+Use On-Demand instances for the production environment.
+
+Answer: Use scheduled reserved instances for the development environment.and Use Reserved instances for the production environment.
+
+3. You are planning to deploy several EC2 instances in your VPC. You will deploy the EC2 instances across several subnets and multiple AZs. What AWS feature can act as an instance-level firewall to control traffic between your EC2 instances?
+AWS WAF.
+Security group.
+Network ACL.
+Route table.
+
+Answer: Security group.
+
+4. A solutions architect is designing a web application that consists of a public-facing web tier hosted on Amazon EC2 in public subnets. The database tier consists of Microsoft SQL Server running on Amazon EC2 in a private subnet. Security is a high priority for the company. How should security groups be configured? (Select TWO)
+Configure the security group for the web tier to allow inbound traffic on port 443 from 0.0.0.0/0.
+Configure the security group for the web tier to allow outbound traffic on port 443 from 0.0.0.0/0.
+Configure the security group for the database tier to allow outbound traffic on ports 443 and 1433 to the security group for the web tier.
+Configure the security group for the database tier to allow inbound traffic on ports 443 and 1433 from the security group for the web tier.
+Configure the security group for the database tier to allow inbound traffic on port 1433 from the security group for the web tier.
+
+Answer: Configure the security group for the web tier to allow inbound traffic on port 443 from 0.0.0.0/0.
+Configure the security group for the database tier to allow inbound traffic on ports 443 and 1433 from the security group for the web tier.
+
+5. How can a systems administrator specify a script run on an EC2 instance during launch?
+Metadata.
+User Data.
+Launch Template.
+AWS ECS.
+
+Answer: Launch Template
+
+6. A High-Performance Computing (HPC) which requires low network latency and high throughput between nodes, will be deployed in a single AZ. How should the application be deployed for the best inter-node performance?
+In a partition placement group.
+In a load balancer placement group.
+In a spread placement group.
+In a cluster placement group.
+
+Answer:
+
+7. If we have to ensure that the Amazon EC2 instances from an application can be launched in another AWS Region in the event of a disaster, what steps should be taken? (Select TWO)
+Launch instances in the second Region using the S3 API.
+Create AMIs of the instances and copy them to another Region.
+Launch instances in the second Region from the AMIs.
+Copy the snapshots using Amazon S3 cross-region replication.
+Enable cross-region snapshots for the Amazon EC2 instances.
+
+Answer: Create AMIs of the instances and copy them to another Region.
+Launch instances in the second Region from the AMIs.
+
+8. You are uploading large files to AWS S3 bucket, ranging from 1GB – 3GB. Your organization has a requirement to calculate the hash checksum of the file by reading entire file so the users can validate the checksum to identify any potential corruptions during downloads. For this, you created a Lambda function and getting it triggered through S3 notifications. However, the request is getting timed out. What could be the reason?
+A. Lambda function is configured with minimal memory of 128 MB.
+B. Lambda function is set to run in a private VPC without NAT Gateway or VPC Endpoint.
+C. You have not setup S3 bucket name in the environment variable.
+ D. Lambda function is created in a different region than S3 bucket
+
+ Answer: Lambda function is set to run in a private VPC without NAT Gateway or VPC Endpoint.
+
+Which of the following are not the supported event sources for AWS Lambda function? (choose 2 options)
+A. AWS S3
+B. AWS IoT
+C. AWS CodePipeline
+D. AWS CodeCommit
+E. AWS OpsWorks
+
+Answer: AWS S3 and AWS OpsWorks
+
+9. An IT firm is storing critical data on multiple provisioned IOPS & throughput optimized EBS volumes based upon various categories of data. For quick restoration of this data in other regions, Operation Team is looking for data backup for all these EBS volumes. Which of the following is the best option in performing backup for multiple EBS volumes?
+A. Create a Multi-volume Snapshot for all EBS Volumes attached to EC2 instance by selecting Resource Type as Instance in Snapshot navigation pane.
+B. Create a Multi-volume Snapshot for all EBS Volumes attached to EC2 instance by selecting Resource Type as Volumes in Snapshot navigation pane.
+ C. Create a Snapshot for all EBS Volumes attached to EC2 instance individually by selecting Resource Type as Volumes in Snapshot navigation pane
+. D. Create a Snapshot for all EBS Volumes attached to EC2 instance individually by selecting Resource Type as Instance in Snapshot navigation pane
+
+Answer: 
+10. A start-up firm is using a Dedicated Host for the deployment of Oracle-based applications. Some of the instances on this Dedicated Host are using instance stored volume, while some are using EBS volumes. Host recovery is enabled on this Dedicated host. Due to hardware issues on a dedicated host, a replacement instance was launched. But you found that instance store-backed instances are not recovered to that host. H
+ow would you resolve this issue?
+A. Open an AWS ticket for recovery of instance store-backed instances on Dedicated Host.
+B. Perform manual recovery of instance store-backed instances on Dedicated Host following remedial steps.
+C. Instance store-backed instances need to be rehosted to EBS backed volumes.
+D. Manually start & stop instance so that automatic recovery can be initiated to a replacement Dedicated host.
+11.A start-up firm has purchased 5 numbers of c5.xlarge Instance for a period of 3 years for an upcoming project. Due to the financial crisis, this project is on hold & the company is looking to share these instances to get some financial benefit. The IT head is seeking your guidance for sharing these Reserved Instances. Which of the following statements is correct with regards to Capacity sharing?
+A. Capacity reservations can be shared only with Accounts within AWS Organisation.
+B. Capacity reservations can be shared only with other AWS accounts.
+C. Capacity reservations can be shared with other AWS accounts or within AWS Organisation.
+D. Capacity reservations cannot be shared outside individual accounts.
+12. A Global IT firm is using a fleet of Reserved Instance for its intranet applications. For uninterrupted services, they are planning to queue Reserved Instance purchases. Which of the following is the correct statement for queuing Reserved Instance?
+A. Reserved Instance purchases can be queued only for Reserved instance purchases from other sellers but not for Regional Reserved Instance.
+ B. Reserved Instance purchases can be queued only for Zonal Reserved instances but not for Regional Reserved Instances.
+C. Reserved Instance purchases can be queued only for Zonal Reserved instances but not for Reserved Instance from other sellers.
+D. Reserved Instance purchases can be queued only for Regional Reserved instance but not for Reserved Instance from other sellers.
+13. The Development Team of a gaming application firm needs to test new gaming apps on various EC2 instances with multiple OS platforms. To avoid delay in the setup of these EC2 instances, the IT head has decided to launch some EC2 instances with all required application components & hibernate these instances. The Accounts Team is concerned about the cost incurred for these hibernated EC2 instances. Which of the following is the correct statement for charges incurred for an EC2 instance in a hibernation state?
+A. EBS storage charges & Elastic IP Address charges attached to Instance.
+B. Instance charges per second for duration of hibernation & S3 storage charges for data copied from Instance to S3 bucket.
+C. S3 Storage charges & Elastic IP Address charges attached to Instance.
+D. Instance charges per second for duration of hibernation & EBS storage charges.
+14. The Development Team has successfully deployed a new application on the Amazon EC2 instance in the us-west-2 region. The same application needs to be deployed on Amazon EC2 instances in other regions. For this deployment, they are looking for your support to deploy EC2 instances with images built from instances in the us-west-2 region along with the latest security patches. Which action will be best suited for this requirement?
+A. Create a snapshot of an image & deploy it in all other EC2 instances.
+ B. Build automated scripts to create updated images with the latest patches.
+C. Manually create EC2 image with the latest patches.
+D. Use EC2 Image Builder to create images with the latest patches.
+15. Media firm is using EBS backed EC2 Instance for their application deployment. They have a process of daily snapshot of these EBS volumes. During an outage, while restoring this snapshot, they observed a delay in restoration, incurring financial loss to the firm. The IT Head has demanded to use Fast Snapshot restore (FSR) for performance improvement & assigned you to work on this task to set up FSR on Snapshots. Which of the following is the correct statement concerning FSR for EBS?
+A. FSR can be enabled for New & Existing Snapshots per Availability Zone.
+B. FSR can be enabled for only New Snapshots per Availability Zone.
+C. FSR can be enabled for only Existing Snapshots per Availability Zone.
+ D. FSR can be enabled for only New Snapshots in all Availability Zone in a region.
+16. A start-up firm is using a legacy Linux based EC2 instance for their application deployment. Users will be using browser-based clients to connect to Linux instances. The IT Team plans to set up EC2 Instance Connect to enable users to connect to these instances. Which of the following steps is not required for setting Amazon EC2 Instance connect on instance?
+A. Install EC2 Instance Connect on an instance.
+ B. Installing EC2 instance Connect CLI.
+C. Configuring IAM permissions for EC2 Instance Connect.
+ D. Create Security Group allowing port 22 in inbound direction & associate with instance.
+
+Practical Questions
+Create an ec2 instance with EBS backed storage and host a webpage on it using httpd, connect this ec2 instance with a load balancer and route your traffic to the webpage throught Load balancer.
+Create a test file on the EBS Volume attached the the instance.
+Create configuration to not delete the EBS Volume when the Intances is terminated.
+Create an Snapshot(image) of the created ec2 instance created in question 1.
+Create an autoscaling group with min 1 and max 2 t2. Micro instances that would scale out once the avg CPU utilization exceeds 70%. (once test please change the min and max value in autoscaling group to 0, so that you are not charged for these instances).
+Create an s3 bucket.
+Create a Lambda function and trigger it based on
+Upload of file in s3 bucket.
+Cloudwatch Rule.

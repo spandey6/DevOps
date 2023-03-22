@@ -1,0 +1,24 @@
+1. How do you create a docker container from an image?
+  sudo docker run -it imageid /bin/bash
+
+2. How to delete a stopped container?
+  sudo docker rm containerID
+
+3.  How to start, stop and kill a container?
+  sudo docker start containerID
+  sudo docker stop containerID
+  sudo docker kill containerID
+
+4. Suppose you have 3 containers running and out of these, you wish to access one of them. How do you access a running container?
+  sudo docker exec containerid [Command here ls]
+
+5.  How do you list all the running containers?
+  sudo docker ps
+
+6.  If you wish to use a base image and make modifications or personalize it, how do you do that?
+  sudo docker build -t newImage:versionNumber . (This is done using a dockerfile)
+
+7. If you vaguely remember the command and you’d like to confirm it, how will you get help on that particular command?
+  docker --help
+
+8. 
